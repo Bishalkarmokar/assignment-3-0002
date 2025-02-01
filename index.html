@@ -41,7 +41,7 @@
     <body>
         <!-- Header Section -->
         <header class="bg-[#FDFCFB]">
-            <div class="container mx-auto">
+            <div class="md:container md:mx-auto">
                 <!-- Nav Section -->
                 <!-- Navbar -->
                 <div class="flex justify-between items-center px-6 py-4 nav-div">
@@ -98,18 +98,18 @@
 
                 <section class="flex justify-center items-center flex-col mt-24">
                     <!-- Banner Text -->
-                    <div class="w-[50rem] text-center">
-                        <h2 class="text-3xl md:text-5xl font-bold md:leading-[4rem] text-primary px-56 md:px-0">Freshness <span
+                    <div class="md:w-[50rem] text-center">
+                        <h2 class="text-3xl md:text-5xl font-bold md:leading-[4rem] text-primary md:px-0">Freshness <span
                                 class="text-primary-color">You Can <br>
                                 Count</span> On, Prices You’ll Love!</h2>
-                        <p class="text-primary mx-56 md:mx-1 md:text-xl my-8">Shop your daily essentials at unbeatable
+                        <p class="text-primary md:mx-1 md:text-xl my-8">Shop your daily essentials at unbeatable
                             prices. From fresh
                             produce to
                             pantry staples, we’ve got you covered every day!</p>
                     </div>
                     <!-- Banner Img -->
                     <div>
-                        <img src="./c2-assets/hero-vegetables.png" alt="">
+                        <img src="./c2-assets/hero-vegetables.png" alt="" class="max-width-full">
                     </div>
                 </section>
             </div>
@@ -118,7 +118,7 @@
         <!-- Main section -->
         <main>
             <!-- Services Section -->
-            <section class="my-36 mx-8 container mx-auto"><!-- Services -->
+            <section class="my-36 mx-8 md:container md:mx-auto"><!-- Services -->
                 <h3 class="text-primary-color font-semibold text-4xl mb-12">Services</h3>
                 <div class="flex gap-8 justify-around flex-col md:flex-row"><!-- Services card -->
 
@@ -155,19 +155,19 @@
             <!-- Popular Products Section -->
 
             <section class="bg-[#EFEBE3] py-36">
-                <div class="container mx-auto"><!-- For width -->
-                    <h2 class="text-4xl font-semibold text-primary-color mb-12">Popular Products</h2>
+                <div class="md:container mx-auto w-full"><!-- For width -->
+                    <h2 class="text-4xl font-semibold text-primary-color mb-12 mx-4 md:mx-0">Popular Products</h2>
                     <!-- Popular Products cards -->
-                    <div class="flex gap-5">
+                    <div class="flex gap-5 flex-col md:flex-row">
                         <!-- Big Card -->
-                    <div class="bg-hero-pattern bg-no-repeat w-4/12 pl-12 h-[26.5rem] relative rounded-lg">
-                        <img src="./c2-assets/vegetable-offer.png" alt="" class="absolute right-1 bottom-0">
+                    <div class="bg-hero-pattern bg-no-repeat md:w-4/12 pl-12 h-[26.5rem] relative rounded-lg mx-4 md:mx-0">
+                        <img src="./c2-assets/vegetable-offer.png" alt="" class="absolute right-0 md:right-1 bottom-0">
                             <h3 class="text-4xl font-bold text-white pt-12 pb-6">30% off</h3>
                             <p class="max-w-64 mb-6">Discover a world of treats, toys, and essentials handpicked for</p>
-                            <button class="px-8 py-2.5 bg-white text-black text-xl rounded-lg">Buy Now</button>
+                            <button class="px-8 py-2.5 bg-white text-black text-xl rounded-lg z-10 relative">Buy Now</button>
                         </div>
                         <!-- Small Card -->
-                        <div class="grid grid-cols-3 w-9/12 gap-5">
+                        <div class="grid grid-cols-2 md:grid-cols-3 md:w-9/12 md:gap-5 gap-4 mx-4">
                             <div class="flex gap-2 bg-white p-4 rounded-xl"><!-- Small cards  -->
                                 <img src="./c2-assets/image 43.png" alt="" class="bg-[#EFEBE3] p-2 rounded-xl">
                                 <div><!-- Small cards text -->
@@ -288,7 +288,7 @@
                                     <p class="font-semibold">$39.99</p>
                                 </div>
                             </div>
-                            <div class="flex gap-2 bg-white p-4 rounded-xl"><!-- Small cards  -->
+                            <div class="flex gap-2 bg-white p-4 rounded-xl hidden md:block"><!-- Small cards  -->
                                 <img src="./c2-assets/image 43.png" alt="" class="bg-[#EFEBE3] p-2 rounded-xl">
                                 <div><!-- Small cards text -->
                                     <div class="flex gap-1">
@@ -309,31 +309,34 @@
             </section>
             <!-- Arrival & Offers section -->
             
-            <section class="mt-36 container mx-auto">
+            <section class="mt-36 md:container md:mx-auto mx-4">
                 <h3 class="text-3xl font-semibold text-primary-color mb-12">Arrival & Offers</h3>
 
                 <!-- Arrival & Offers CARDS -->
-                <div class="flex gap-3">
+                <div class="flex gap-5 flex-col md:flex-row md:mx-4 md:mx-0">
                     <!-- Big card -->
-                    <div class="bg-[#115414] w-3/5 flex justify-between rounded-2xl pt-8 items-end">
-                        <div class="mb-8 ml-14">
-                            <img src="./c2-assets/dawat-logo.png" alt="">
-                            <button class="text-2xl bg-[#63B76D] text-white px-14 py-4 rounded-xl tracking-widest mt-8">Cook Exotic Dishes</button>
-                            <h4 class="text-5xl text-white mt-8">UP to <span class="font-bold">20% OFF</span></h4>
+                    <div class="bg-[#115414] md:w-7/12 flex justify-between rounded-2xl md:pt-8 items-end">
+                        <div class="md:mb-8 md:ml-14 ml-4">
+                            <img src="./c2-assets/dawat-logo.png" alt=""
+                            class="pt-8 ml-[-0.875rem]"
+                            >
+                            <button class="md:text-2xl bg-[#63B76D] text-white md:px-14 md:py-4 md:rounded-xl md:tracking-widest md:mt-8 mt-10 px-1 py-1 rounded-lg">Cook Exotic Dishes</button>
+                            <h4 class="md:text-5xl text-white md:mt-8 mt-6 text-xl pb-4 md:pb-0">UP to <span class="font-bold">20% OFF</span></h4>
                         </div>
-                        <img src="./c2-assets/dawat-mock-up.png" alt="" class="">
+                        <img src="./c2-assets/dawat-mock-up.png" alt="" class="w-1/2 md:w-auto">
                     </div>
                     <!-- Small Card -->
-                    <div class="bg-[#102861] flex justify-between rounded-2xl py-0 items-end w-1/2">
-                        <div class="mb-8 ml-14">
+                    <div class="bg-[#102861] flex justify-between rounded-2xl md:pt-8 items-end md:w-[42%]">
+                        <div class="md:mb-8 md:ml-14 ml-4">
                             <img src="./c2-assets/india-gate-logo.png" alt="">
-                            <button class="text-2xl bg-[#2A4D97] text-white px-14 py-4 rounded-xl tracking-widest mt-8">World’s No.1 Rice</button>
-                            <h4 class="text-5xl text-white mt-8">UP to <span class="font-bold">40% OFF</span></h4>
+                            <button class="md:text-2xl bg-[#2A4D97] text-white md:px-14 md:py-4 md:rounded-xl md:tracking-widest md:mt-8 mt-4 text-lg px-1 py-1 rounded-lg">World’s No.1 Rice</button>
+                            <h4 class="md:text-5xl text-white mt-2 md:mt-8 text-xl mb-4">UP to <span class="font-bold">40% OFF</span></h4>
                         </div>
-                        <img src="./c2-assets/india-gate-mock-up.png" alt="" class="mr-12">
+                        <img src="./c2-assets/india-gate-mock-up.png" alt="" class="w-1/3 mr-4 md:w-auto md:mr-12">
                     </div>
                 </div>
             </section>
+            
         </main>
     </body>
 
